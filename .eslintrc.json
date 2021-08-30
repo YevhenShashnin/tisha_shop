@@ -4,7 +4,6 @@
     "react",
     "import",
     "react-hooks",
-    "babel",
     "simple-import-sort"
   ]
 }
