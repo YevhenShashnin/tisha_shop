@@ -1,5 +1,7 @@
 const a = 12;
 
-const b = {
+console.log(123456);
+
+let b = {
   d: 1,
 };
