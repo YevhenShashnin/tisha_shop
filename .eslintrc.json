@@ -1,9 +1,57 @@
 {
-  "extends": ["next/babel"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends":[
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "process": true
+  },
   "plugins": [
     "react",
     "import",
     "react-hooks",
     "simple-import-sort"
-  ]
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "requireConfigFile": false,
+      "babelOptions": {
+          "presets": ["@babel/preset-react"]
+      }
+  },
+  "ignorePatterns": [
+      "node_modules/*",
+      ".next/*",
+      ".out/*",
+      "!.prettierrc.json"
+  ],
+  "settings": {
+    "import/resolver": {
+        "alias": {
+            "map": [
+                ["@/components", "./client/components"],
+                ["@/store", "./client/store"],
+                ["@/services", "./client/services"]
+            ],
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+    },
+    "react": {
+        "version": "detect"
+    }
+}
 }
