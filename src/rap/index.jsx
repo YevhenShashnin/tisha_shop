@@ -1,7 +1,5 @@
-console.log(122323);
+const a = 12;
 
-var a = 12;
-
-let b = {
+const b = {
   d: 1,
 };
