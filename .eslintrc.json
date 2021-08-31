@@ -26,29 +26,29 @@
       "ecmaVersion": 2020,
       "sourceType": "module",
       "ecmaFeatures": {
-          "jsx": true
+        "jsx": true
       },
       "requireConfigFile": false,
       "babelOptions": {
-          "presets": ["@babel/preset-react"]
+        "presets": ["@babel/preset-react"]
       }
   },
   "ignorePatterns": [
-      "node_modules/*",
-      ".next/*",
-      ".out/*",
-      "!.prettierrc.json"
+    "node_modules/*",
+    ".next/*",
+    ".out/*",
+    "!.prettierrc.json"
   ],
   "settings": {
     "import/resolver": {
-        "alias": {
-            "map": [
-                ["@/components", "./client/components"],
-                ["@/store", "./client/store"],
-                ["@/services", "./client/services"]
-            ],
-            "extensions": [".js", ".jsx", ".ts", ".tsx"]
-        }
+      "alias": {
+        "map": [
+          ["@/components", "./client/components"],
+          ["@/store", "./client/store"],
+          ["@/services", "./client/services"]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     },
     "react": {
         "version": "detect"

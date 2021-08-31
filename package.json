@@ -29,6 +29,7 @@
     "@babel/preset-react": "^7.14.5",
     "Babel": "^0.0.1",
     "babel-eslint": "^10.1.0",
+    "clsx": "^1.1.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "11.1.0",
@@ -38,6 +39,7 @@
     "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
+    "sass": "^1.38.2",
     "stylelint": "^13.13.1"
   }
 }
